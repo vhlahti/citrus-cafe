@@ -1,0 +1,154 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+#container {
+    background-color: #83C05B;
+}
+#visiontext {
+    padding: 1rem;
+}
+header {
+    background-color: #83C05B;
+}
+#header-figure {
+    display: block;
+}
+header figure img {
+    max-width: 100%;
+ }
+h3 {
+    background-color: #CBCBCB;
+    padding: 1rem;
+}
+.special-kuvat {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+.parent1 {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.parent1 > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.parent1 section {
+    flex-grow: 2;
+}
+nav {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #83C05B;
+}
+.naviparent {
+    background-color: #9DCD7C;
+    font-size: 2.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px #598334;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#maincontent {
+    background-color: #83C05B;
+}
+.palkki {
+    border: #598334 solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 40%) 0 0 3px;
+}
+#vision {
+    font-size: 2.4rem;
+}
+#specials, #events, #news {
+    font-size: 2.4rem;
+    background-color: white;
+    padding: 1rem;
+}
+#news-list {
+    font-size: 2.0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+}
+footer {
+    background-color: #83C05B;
+    padding: 1rem;
+}
+#address {
+    color: white;
+}
+#phonenumber {
+    margin-top: 0.5rem;
+}
+.fa-angle-right {
+    float: right;
+}
+.fa-square-facebook, .fa-square-twitter {
+    color: white;
+    float: right;
+    padding: 0.2rem;
+}
+
+/* Boxes flexin avulla */
+#boxes {
+    background-color: #83C05B;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#boxes > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+/* Tablet-näkymän css-säännöt. */
+@media only screen and (min-width: 426px) {
+    .parent1 {
+        display: flex;
+        align-items: center;
+    }
+    .naviparent {
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    #vision {
+        background-color: #DFD5B8;
+        padding: 1rem;
+        display: flex;
+    }
+    #vision-section
+    {
+        align-self: center;
+    }
+    #visionkuva {
+        max-width: 100%;
+        height: auto;
+    }
+    #boxes > * {
+        flex-basis: 0;
+    }
+    #boxes #news {
+        flex-basis: 100%;
+    }
+}
+
+/* Desktop-näkymän css-säännöt. */
+@media only screen and (min-width: 769px) {
+    
+    #boxes #news {
+        flex-basis: 0;
+    }
+    #container {
+        padding: 1rem
+    }
+}
